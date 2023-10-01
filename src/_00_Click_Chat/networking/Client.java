@@ -53,6 +53,7 @@ public class Client {
 		try {
 			if (os != null) {
 				os.writeObject("CLICK SENT FROM CLIENT");
+				System.out.println("CLICK");
 				os.flush();
 			}
 		} catch (IOException e) {
