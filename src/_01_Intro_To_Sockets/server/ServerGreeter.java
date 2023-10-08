@@ -57,6 +57,12 @@ public class ServerGreeter extends Thread {
 
 	public static void main(String[] args) {
 		//16. In a new thread, create an object of the ServerGreeter class and start the thread. Don't forget the try-catch.
-		
+		try {
+			Thread thread =  new ServerGreeter();
+			thread.start();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
